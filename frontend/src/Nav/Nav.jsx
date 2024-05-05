@@ -2,12 +2,11 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import LoginNav from "./LoginNav";
 import LogoutNav from "./LogoutNav";
-// import { AuthContext } from "../AuthProvider";
+import { AuthContext } from "../AuthProvider";
 
 const Nav = () => {
-  // const { user, setRouteState } = useContext(AuthContext);
-  const user = "abc";
-  const setRouteState = "xly";
+  const { user, setRouteState } = useContext(AuthContext);
+  console.log(user);
   const [themeState, setThemeState] = useState(
     localStorage.getItem("darkyTheme") === "true"
   );

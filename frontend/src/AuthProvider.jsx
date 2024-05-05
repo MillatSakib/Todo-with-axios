@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { createContext } from "react";
 import { auth } from "./firebase.config";
 import { updateProfile } from "firebase/auth";
-import { toast } from "react-toastify";
+
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -12,6 +12,7 @@ import {
 } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { GithubAuthProvider } from "firebase/auth";
+import { toast } from "react-toastify";
 
 export const AuthContext = createContext(null);
 

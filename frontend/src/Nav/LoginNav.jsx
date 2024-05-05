@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
-// import { AuthContext } from "../AuthProvider";
+import { AuthContext } from "../AuthProvider";
 
 const LoginNav = () => {
-  // const { user, logOut } = useContext(AuthContext);
-  const user = "abc";
-  const logOut = "fasdd";
+  const { user, logOut } = useContext(AuthContext);
+
   return (
     <div className={user ? "flex items-center gap-2" : "hidden"}>
       <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">

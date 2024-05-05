@@ -1,11 +1,10 @@
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-// import { AuthContext } from "../AuthProvider";
+import { AuthContext } from "../AuthProvider";
 
 const LogoutNav = () => {
-  // const { user, loading } = useContext(AuthContext);
-  const user = "f";
-  const loading = "fdd";
+  const { user, loading } = useContext(AuthContext);
+
   return (
     <div>
       <NavLink
